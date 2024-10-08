@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+
+  # Database Postgres
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=attendance_postgres
+      - POSTGRES_USER=attendance_postgres
+      - POSTGRES_PASSWORD=attendance_postgres
+    container_name: attendance_postgres_db
+    restart: unless-stopped
+
+  # Django Application
+  attendance_app:
+    build: .
+    volumes:
+      - .:/attendance_django
+      - ./static_cdn:/var/lib/static_cdn
+    ports:
+      - 443:443  # SSL port
+    image: attendance_app:django
+    container_name: attendance_django_app
+    command: python manage.py runsslserver --certificate /etc/ssl/certs/server.crt --key /etc/ssl/private/server.key 0.0.0.0:443
+    depends_on:
+      - db
+    restart: unless-stopped
+
+volumes:
+  static_cdn:

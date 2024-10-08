@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Attendance List</h1>
+    <form action="{% url 'attendance_list' %}" method="get">
+        <div class="row mb-3">
+            <div class="col-md-5">
+                <label for="startDatePicker">Start Date:</label>
+                <input type="date" class="form-control" id="startDatePicker" name="start_date" />
+            </div>
+            <div class="col-md-5">
+                <label for="endDatePicker">End Date:</label>
+                <input type="date" class="form-control" id="endDatePicker" name="end_date" />
+            </div>
+            <div class="col-md-2">
+                <label>&nbsp;</label>
+                <button type="submit" class="btn btn-primary btn-block">Apply</button>
+            </div>
+        </div>
+    </form>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Staff ID</th>
+                <th>Full Name</th>
+                <th>Date</th>
+                <th>Sign In Time</th>
+                <th>Sign Out Time</th>
+                <th>Total Work Time</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in attendance_records %}
+            <tr>
+                <td>{{ record.staff }}</td>
+                <td>{{ record.first_name }} {{ record.last_name }}</td>
+                <td>{{ record.sign_in_time|date:"Y-m-d" }}</td>
+                <td>{{ record.sign_in_time|time:"H:i:s" }}</td>
+                <td>{{ record.sign_out_time|time:"H:i:s" }}</td>
+                <td>{{ record.total_work_time }}</td>
+                <td>
+                    <!-- Display image if available -->
+                    {% if record.image_data_url %}
+                        <img src="{{ record.image_data_url }}" width="100" height="100" />
+                    {% else %}
+                        No image available
+                    {% endif %}
+                </td>
+            </tr>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <button id="download" class="btn btn-danger btn-block">Download</button>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(function () {
+        // Handle Apply button click event
+        $('#applyDateRange').click(function () {
+            var startDate = $('#startDatePicker').val();
+            var endDate = $('#endDatePicker').val();
+            // Ensure date format is YYYY-MM-DD
+            window.location.href = '/attendance-list/?start_date=' + startDate + '&end_date=' + endDate;
+        });
+
+        // Handle Download button click event
+        $('#download').click(function () {
+            // Redirect to a URL that generates the CSV file
+            window.location.href = '/download-attendance-csv/';
+        });
+    });
+</script>
+{% endblock %}

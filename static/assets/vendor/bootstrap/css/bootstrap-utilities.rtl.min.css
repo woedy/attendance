@@ -1,0 +1,2180 @@
+/*!
+ * Bootstrap Utilities v5.3.2 (https://getbootstrap.com/)
+ * Copyright 2011-2023 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */:root,[data-bs-theme=light]{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, 0.75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, 0.5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, 0.175);--bs-border-radius:0.375rem;--bs-border-radius-sm:0.25rem;--bs-border-radius-lg:0.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);--bs-box-shadow-sm:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, 0.175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, 0.075);--bs-focus-ring-width:0.25rem;--bs-focus-ring-opacity:0.25;--bs-focus-ring-color:rgba(13, 110, 253, 0.25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}[data-bs-theme=dark]{color-scheme:dark;--bs-body-color:#dee2e6;--bs-body-color-rgb:222,226,230;--bs-body-bg:#212529;--bs-body-bg-rgb:33,37,41;--bs-emphasis-color:#fff;--bs-emphasis-color-rgb:255,255,255;--bs-secondary-color:rgba(222, 226, 230, 0.75);--bs-secondary-color-rgb:222,226,230;--bs-secondary-bg:#343a40;--bs-secondary-bg-rgb:52,58,64;--bs-tertiary-color:rgba(222, 226, 230, 0.5);--bs-tertiary-color-rgb:222,226,230;--bs-tertiary-bg:#2b3035;--bs-tertiary-bg-rgb:43,48,53;--bs-primary-text-emphasis:#6ea8fe;--bs-secondary-text-emphasis:#a7acb1;--bs-success-text-emphasis:#75b798;--bs-info-text-emphasis:#6edff6;--bs-warning-text-emphasis:#ffda6a;--bs-danger-text-emphasis:#ea868f;--bs-light-text-emphasis:#f8f9fa;--bs-dark-text-emphasis:#dee2e6;--bs-primary-bg-subtle:#031633;--bs-secondary-bg-subtle:#161719;--bs-success-bg-subtle:#051b11;--bs-info-bg-subtle:#032830;--bs-warning-bg-subtle:#332701;--bs-danger-bg-subtle:#2c0b0e;--bs-light-bg-subtle:#343a40;--bs-dark-bg-subtle:#1a1d20;--bs-primary-border-subtle:#084298;--bs-secondary-border-subtle:#41464b;--bs-success-border-subtle:#0f5132;--bs-info-border-subtle:#087990;--bs-warning-border-subtle:#997404;--bs-danger-border-subtle:#842029;--bs-light-border-subtle:#495057;--bs-dark-border-subtle:#343a40;--bs-heading-color:inherit;--bs-link-color:#6ea8fe;--bs-link-hover-color:#8bb9fe;--bs-link-color-rgb:110,168,254;--bs-link-hover-color-rgb:139,185,254;--bs-code-color:#e685b5;--bs-highlight-color:#dee2e6;--bs-highlight-bg:#664d03;--bs-border-color:#495057;--bs-border-color-translucent:rgba(255, 255, 255, 0.15);--bs-form-valid-color:#75b798;--bs-form-valid-border-color:#75b798;--bs-form-invalid-color:#ea868f;--bs-form-invalid-border-color:#ea868f}.clearfix::after{display:block;clear:both;content:""}.text-bg-primary{color:#fff!important;background-color:RGBA(var(--bs-primary-rgb),var(--bs-bg-opacity,1))!important}.text-bg-secondary{color:#fff!important;background-color:RGBA(var(--bs-secondary-rgb),var(--bs-bg-opacity,1))!important}.text-bg-success{color:#fff!important;background-color:RGBA(var(--bs-success-rgb),var(--bs-bg-opacity,1))!important}.text-bg-info{color:#000!important;background-color:RGBA(var(--bs-info-rgb),var(--bs-bg-opacity,1))!important}.text-bg-warning{color:#000!important;background-color:RGBA(var(--bs-warning-rgb),var(--bs-bg-opacity,1))!important}.text-bg-danger{color:#fff!important;background-color:RGBA(var(--bs-danger-rgb),var(--bs-bg-opacity,1))!important}.text-bg-light{color:#000!important;background-color:RGBA(var(--bs-light-rgb),var(--bs-bg-opacity,1))!important}.text-bg-dark{color:#fff!important;background-color:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1))!important}.link-primary{color:RGBA(var(--bs-primary-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-primary-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-primary-rgb),var(--bs-link-underline-opacity,1))!important}.link-primary:focus,.link-primary:hover{color:RGBA(10,88,202,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(10,88,202,var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(10,88,202,var(--bs-link-underline-opacity,1))!important}.link-secondary{color:RGBA(var(--bs-secondary-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-secondary-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-secondary-rgb),var(--bs-link-underline-opacity,1))!important}.link-secondary:focus,.link-secondary:hover{color:RGBA(86,94,100,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(86,94,100,var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(86,94,100,var(--bs-link-underline-opacity,1))!important}.link-success{color:RGBA(var(--bs-success-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-success-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-success-rgb),var(--bs-link-underline-opacity,1))!important}.link-success:focus,.link-success:hover{color:RGBA(20,108,67,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(20,108,67,var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(20,108,67,var(--bs-link-underline-opacity,1))!important}.link-info{color:RGBA(var(--bs-info-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-info-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-info-rgb),var(--bs-link-underline-opacity,1))!important}.link-info:focus,.link-info:hover{color:RGBA(61,213,243,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(61,213,243,var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(61,213,243,var(--bs-link-underline-opacity,1))!important}.link-warning{color:RGBA(var(--bs-warning-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-warning-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-warning-rgb),var(--bs-link-underline-opacity,1))!important}.link-warning:focus,.link-warning:hover{color:RGBA(255,205,57,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(255,205,57,var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(255,205,57,var(--bs-link-underline-opacity,1))!important}.link-danger{color:RGBA(var(--bs-danger-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-danger-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-danger-rgb),var(--bs-link-underline-opacity,1))!important}.link-danger:focus,.link-danger:hover{color:RGBA(176,42,55,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(176,42,55,var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(176,42,55,var(--bs-link-underline-opacity,1))!important}.link-light{color:RGBA(var(--bs-light-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-light-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-light-rgb),var(--bs-link-underline-opacity,1))!important}.link-light:focus,.link-light:hover{color:RGBA(249,250,251,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(249,250,251,var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(249,250,251,var(--bs-link-underline-opacity,1))!important}.link-dark{color:RGBA(var(--bs-dark-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-dark-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-dark-rgb),var(--bs-link-underline-opacity,1))!important}.link-dark:focus,.link-dark:hover{color:RGBA(26,30,33,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(26,30,33,var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(26,30,33,var(--bs-link-underline-opacity,1))!important}.link-body-emphasis{color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,1))!important;-webkit-text-decoration-color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-underline-opacity,1))!important;text-decoration-color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-underline-opacity,1))!important}.link-body-emphasis:focus,.link-body-emphasis:hover{color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,.75))!important;-webkit-text-decoration-color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-underline-opacity,0.75))!important;text-decoration-color:RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-underline-opacity,0.75))!important}.focus-ring:focus{outline:0;box-shadow:var(--bs-focus-ring-x,0) var(--bs-focus-ring-y,0) var(--bs-focus-ring-blur,0) var(--bs-focus-ring-width) var(--bs-focus-ring-color)}.icon-link{display:inline-flex;gap:.375rem;align-items:center;-webkit-text-decoration-color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,0.5));text-decoration-color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,0.5));text-underline-offset:0.25em;-webkit-backface-visibility:hidden;backface-visibility:hidden}.icon-link>.bi{flex-shrink:0;width:1em;height:1em;fill:currentcolor;transition:.2s ease-in-out transform}@media (prefers-reduced-motion:reduce){.icon-link>.bi{transition:none}}.icon-tructor'
+	},
+	GetReferencedName: {
+		url: 'https://262.ecma-international.org/6.0/#sec-jobs-and-job-queues'
+	},
+	GetSubstitution: {
+		url: 'https://262.ecma-international.org/6.0/#sec-getsubstitution'
+	},
+	GetSuperConstructor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-getsuperconstructor'
+	},
+	GetTemplateObject: {
+		url: 'https://262.ecma-international.org/6.0/#sec-gettemplateobject'
+	},
+	GetThisEnvironment: {
+		url: 'https://262.ecma-international.org/6.0/#sec-getthisenvironment'
+	},
+	GetThisValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-getthisvalue'
+	},
+	GetV: {
+		url: 'https://262.ecma-international.org/6.0/#sec-getv'
+	},
+	GetValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-getvalue'
+	},
+	GetValueFromBuffer: {
+		url: 'https://262.ecma-international.org/6.0/#sec-getvaluefrombuffer'
+	},
+	GetViewValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-getviewvalue'
+	},
+	HasOwnProperty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-hasownproperty'
+	},
+	HasPrimitiveBase: {
+		url: 'https://262.ecma-international.org/6.0/#sec-jobs-and-job-queues'
+	},
+	HasProperty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-hasproperty'
+	},
+	HourFromTime: {
+		url: 'https://262.ecma-international.org/6.0/#sec-hours-minutes-second-and-milliseconds'
+	},
+	ImportedLocalNames: {
+		url: 'https://262.ecma-international.org/6.0/#sec-importedlocalnames'
+	},
+	InitializeHostDefinedRealm: {
+		url: 'https://262.ecma-international.org/6.0/#sec-initializehostdefinedrealm'
+	},
+	InitializeReferencedBinding: {
+		url: 'https://262.ecma-international.org/6.0/#sec-initializereferencedbinding'
+	},
+	InLeapYear: {
+		url: 'https://262.ecma-international.org/6.0/#sec-year-number'
+	},
+	InstanceofOperator: {
+		url: 'https://262.ecma-international.org/6.0/#sec-instanceofoperator'
+	},
+	IntegerIndexedElementGet: {
+		url: 'https://262.ecma-international.org/6.0/#sec-integerindexedelementget'
+	},
+	IntegerIndexedElementSet: {
+		url: 'https://262.ecma-international.org/6.0/#sec-integerindexedelementset'
+	},
+	IntegerIndexedObjectCreate: {
+		url: 'https://262.ecma-international.org/6.0/#sec-integerindexedobjectcreate'
+	},
+	InternalizeJSONProperty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-internalizejsonproperty'
+	},
+	Invoke: {
+		url: 'https://262.ecma-international.org/6.0/#sec-invoke'
+	},
+	IsAccessorDescriptor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isaccessordescriptor'
+	},
+	IsAnonymousFunctionDefinition: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isanonymousfunctiondefinition'
+	},
+	IsArray: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isarray'
+	},
+	IsCallable: {
+		url: 'https://262.ecma-international.org/6.0/#sec-iscallable'
+	},
+	IsCompatiblePropertyDescriptor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-iscompatiblepropertydescriptor'
+	},
+	IsConcatSpreadable: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isconcatspreadable'
+	},
+	IsConstructor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isconstructor'
+	},
+	IsDataDescriptor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isdatadescriptor'
+	},
+	IsDetachedBuffer: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isdetachedbuffer'
+	},
+	IsExtensible: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isextensible-o'
+	},
+	IsGenericDescriptor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isgenericdescriptor'
+	},
+	IsInTailPosition: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isintailposition'
+	},
+	IsInteger: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isinteger'
+	},
+	IsLabelledFunction: {
+		url: 'https://262.ecma-international.org/6.0/#sec-islabelledfunction'
+	},
+	IsPromise: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ispromise'
+	},
+	IsPropertyKey: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ispropertykey'
+	},
+	IsPropertyReference: {
+		url: 'https://262.ecma-international.org/6.0/#sec-jobs-and-job-queues'
+	},
+	IsRegExp: {
+		url: 'https://262.ecma-international.org/6.0/#sec-isregexp'
+	},
+	IsStrictReference: {
+		url: 'https://262.ecma-international.org/6.0/#sec-jobs-and-job-queues'
+	},
+	IsSuperReference: {
+		url: 'https://262.ecma-international.org/6.0/#sec-jobs-and-job-queues'
+	},
+	IsUnresolvableReference: {
+		url: 'https://262.ecma-international.org/6.0/#sec-jobs-and-job-queues'
+	},
+	IsWordChar: {
+		url: 'https://262.ecma-international.org/6.0/#sec-runtime-semantics-iswordchar-abstract-operation'
+	},
+	IteratorClose: {
+		url: 'https://262.ecma-international.org/6.0/#sec-iteratorclose'
+	},
+	IteratorComplete: {
+		url: 'https://262.ecma-international.org/6.0/#sec-iteratorcomplete'
+	},
+	IteratorNext: {
+		url: 'https://262.ecma-international.org/6.0/#sec-iteratornext'
+	},
+	IteratorStep: {
+		url: 'https://262.ecma-international.org/6.0/#sec-iteratorstep'
+	},
+	IteratorValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-iteratorvalue'
+	},
+	LocalTime: {
+		url: 'https://262.ecma-international.org/6.0/#sec-localtime'
+	},
+	LoopContinues: {
+		url: 'https://262.ecma-international.org/6.0/#sec-loopcontinues'
+	},
+	MakeArgGetter: {
+		url: 'https://262.ecma-international.org/6.0/#sec-makearggetter'
+	},
+	MakeArgSetter: {
+		url: 'https://262.ecma-international.org/6.0/#sec-makeargsetter'
+	},
+	MakeClassConstructor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-makeclassconstructor'
+	},
+	MakeConstructor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-makeconstructor'
+	},
+	MakeDate: {
+		url: 'https://262.ecma-international.org/6.0/#sec-makedate'
+	},
+	MakeDay: {
+		url: 'https://262.ecma-international.org/6.0/#sec-makeday'
+	},
+	MakeMethod: {
+		url: 'https://262.ecma-international.org/6.0/#sec-makemethod'
+	},
+	MakeSuperPropertyReference: {
+		url: 'https://262.ecma-international.org/6.0/#sec-makesuperpropertyreference'
+	},
+	MakeTime: {
+		url: 'https://262.ecma-international.org/6.0/#sec-maketime'
+	},
+	max: {
+		url: 'https://262.ecma-international.org/6.0/#sec-algorithm-conventions'
+	},
+	min: {
+		url: 'https://262.ecma-international.org/6.0/#sec-algorithm-conventions'
+	},
+	MinFromTime: {
+		url: 'https://262.ecma-international.org/6.0/#sec-hours-minutes-second-and-milliseconds'
+	},
+	ModuleNamespaceCreate: {
+		url: 'https://262.ecma-international.org/6.0/#sec-modulenamespacecreate'
+	},
+	modulo: {
+		url: 'https://262.ecma-international.org/6.0/#sec-algorithm-conventions'
+	},
+	MonthFromTime: {
+		url: 'https://262.ecma-international.org/6.0/#sec-month-number'
+	},
+	msFromTime: {
+		url: 'https://262.ecma-international.org/6.0/#sec-hours-minutes-second-and-milliseconds'
+	},
+	msPerDay: {
+		url: 'https://262.ecma-international.org/6.0/#sec-day-number-and-time-within-day'
+	},
+	NewDeclarativeEnvironment: {
+		url: 'https://262.ecma-international.org/6.0/#sec-newdeclarativeenvironment'
+	},
+	NewFunctionEnvironment: {
+		url: 'https://262.ecma-international.org/6.0/#sec-newfunctionenvironment'
+	},
+	NewGlobalEnvironment: {
+		url: 'https://262.ecma-international.org/6.0/#sec-newglobalenvironment'
+	},
+	NewModuleEnvironment: {
+		url: 'https://262.ecma-international.org/6.0/#sec-newmoduleenvironment'
+	},
+	NewObjectEnvironment: {
+		url: 'https://262.ecma-international.org/6.0/#sec-newobjectenvironment'
+	},
+	NewPromiseCapability: {
+		url: 'https://262.ecma-international.org/6.0/#sec-newpromisecapability'
+	},
+	NormalCompletion: {
+		url: 'https://262.ecma-international.org/6.0/#sec-normalcompletion'
+	},
+	ObjectCreate: {
+		url: 'https://262.ecma-international.org/6.0/#sec-objectcreate'
+	},
+	ObjectDefineProperties: {
+		url: 'https://262.ecma-international.org/6.0/#sec-objectdefineproperties'
+	},
+	OrdinaryCallBindThis: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ordinarycallbindthis'
+	},
+	OrdinaryCallEvaluateBody: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ordinarycallevaluatebody'
+	},
+	OrdinaryCreateFromConstructor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ordinarycreatefromconstructor'
+	},
+	OrdinaryDefineOwnProperty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ordinarydefineownproperty'
+	},
+	OrdinaryGetOwnProperty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ordinarygetownproperty'
+	},
+	OrdinaryHasInstance: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ordinaryhasinstance'
+	},
+	OrdinaryHasProperty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ordinaryhasproperty'
+	},
+	ParseModule: {
+		url: 'https://262.ecma-international.org/6.0/#sec-parsemodule'
+	},
+	PerformEval: {
+		url: 'https://262.ecma-international.org/6.0/#sec-performeval'
+	},
+	PerformPromiseAll: {
+		url: 'https://262.ecma-international.org/6.0/#sec-performpromiseall'
+	},
+	PerformPromiseRace: {
+		url: 'https://262.ecma-international.org/6.0/#sec-performpromiserace'
+	},
+	PerformPromiseThen: {
+		url: 'https://262.ecma-international.org/6.0/#sec-performpromisethen'
+	},
+	PrepareForOrdinaryCall: {
+		url: 'https://262.ecma-international.org/6.0/#sec-prepareforordinarycall'
+	},
+	PrepareForTailCall: {
+		url: 'https://262.ecma-international.org/6.0/#sec-preparefortailcall'
+	},
+	ProxyCreate: {
+		url: 'https://262.ecma-international.org/6.0/#sec-proxycreate'
+	},
+	PutValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-putvalue'
+	},
+	QuoteJSONString: {
+		url: 'https://262.ecma-international.org/6.0/#sec-quotejsonstring'
+	},
+	RegExpAlloc: {
+		url: 'https://262.ecma-international.org/6.0/#sec-regexpalloc'
+	},
+	RegExpBuiltinExec: {
+		url: 'https://262.ecma-international.org/6.0/#sec-regexpbuiltinexec'
+	},
+	RegExpCreate: {
+		url: 'https://262.ecma-international.org/6.0/#sec-regexpcreate'
+	},
+	RegExpExec: {
+		url: 'https://262.ecma-international.org/6.0/#sec-regexpexec'
+	},
+	RegExpInitialize: {
+		url: 'https://262.ecma-international.org/6.0/#sec-regexpinitialize'
+	},
+	RejectPromise: {
+		url: 'https://262.ecma-international.org/6.0/#sec-rejectpromise'
+	},
+	RepeatMatcher: {
+		url: 'https://262.ecma-international.org/6.0/#sec-runtime-semantics-repeatmatcher-abstract-operation'
+	},
+	RequireObjectCoercible: {
+		url: 'https://262.ecma-international.org/6.0/#sec-requireobjectcoercible'
+	},
+	ResolveBinding: {
+		url: 'https://262.ecma-international.org/6.0/#sec-resolvebinding'
+	},
+	ResolveThisBinding: {
+		url: 'https://262.ecma-international.org/6.0/#sec-resolvethisbinding'
+	},
+	SameValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-samevalue'
+	},
+	SameValueZero: {
+		url: 'https://262.ecma-international.org/6.0/#sec-samevaluezero'
+	},
+	SecFromTime: {
+		url: 'https://262.ecma-international.org/6.0/#sec-hours-minutes-second-and-milliseconds'
+	},
+	SerializeJSONArray: {
+		url: 'https://262.ecma-international.org/6.0/#sec-serializejsonarray'
+	},
+	SerializeJSONObject: {
+		url: 'https://262.ecma-international.org/6.0/#sec-serializejsonobject'
+	},
+	SerializeJSONProperty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-serializejsonproperty'
+	},
+	Set: {
+		url: 'https://262.ecma-international.org/6.0/#sec-set-o-p-v-throw'
+	},
+	SetDefaultGlobalBindings: {
+		url: 'https://262.ecma-international.org/6.0/#sec-setdefaultglobalbindings'
+	},
+	SetFunctionName: {
+		url: 'https://262.ecma-international.org/6.0/#sec-setfunctionname'
+	},
+	SetIntegrityLevel: {
+		url: 'https://262.ecma-international.org/6.0/#sec-setintegritylevel'
+	},
+	SetRealmGlobalObject: {
+		url: 'https://262.ecma-international.org/6.0/#sec-setrealmglobalobject'
+	},
+	SetValueInBuffer: {
+		url: 'https://262.ecma-international.org/6.0/#sec-setvalueinbuffer'
+	},
+	SetViewValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-setviewvalue'
+	},
+	sign: {
+		url: 'https://262.ecma-international.org/6.0/#sec-algorithm-conventions'
+	},
+	SortCompare: {
+		url: 'https://262.ecma-international.org/6.0/#sec-sortcompare'
+	},
+	SpeciesConstructor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-speciesconstructor'
+	},
+	SplitMatch: {
+		url: 'https://262.ecma-international.org/6.0/#sec-splitmatch'
+	},
+	'Strict Equality Comparison': {
+		url: 'https://262.ecma-international.org/6.0/#sec-strict-equality-comparison'
+	},
+	StringCreate: {
+		url: 'https://262.ecma-international.org/6.0/#sec-stringcreate'
+	},
+	StringGetIndexProperty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-stringgetindexproperty'
+	},
+	SymbolDescriptiveString: {
+		url: 'https://262.ecma-international.org/6.0/#sec-symboldescriptivestring'
+	},
+	TestIntegrityLevel: {
+		url: 'https://262.ecma-international.org/6.0/#sec-testintegritylevel'
+	},
+	thisBooleanValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-properties-of-the-boolean-prototype-object'
+	},
+	thisNumberValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-properties-of-the-number-prototype-object'
+	},
+	thisStringValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-properties-of-the-string-prototype-object'
+	},
+	thisTimeValue: {
+		url: 'https://262.ecma-international.org/6.0/#sec-properties-of-the-date-prototype-object'
+	},
+	TimeClip: {
+		url: 'https://262.ecma-international.org/6.0/#sec-timeclip'
+	},
+	TimeFromYear: {
+		url: 'https://262.ecma-international.org/6.0/#sec-year-number'
+	},
+	TimeWithinDay: {
+		url: 'https://262.ecma-international.org/6.0/#sec-day-number-and-time-within-day'
+	},
+	ToBoolean: {
+		url: 'https://262.ecma-international.org/6.0/#sec-toboolean'
+	},
+	ToDateString: {
+		url: 'https://262.ecma-international.org/6.0/#sec-todatestring'
+	},
+	ToInt16: {
+		url: 'https://262.ecma-international.org/6.0/#sec-toint16'
+	},
+	ToInt32: {
+		url: 'https://262.ecma-international.org/6.0/#sec-toint32'
+	},
+	ToInt8: {
+		url: 'https://262.ecma-international.org/6.0/#sec-toint8'
+	},
+	ToInteger: {
+		url: 'https://262.ecma-international.org/6.0/#sec-tointeger'
+	},
+	ToLength: {
+		url: 'https://262.ecma-international.org/6.0/#sec-tolength'
+	},
+	ToNumber: {
+		url: 'https://262.ecma-international.org/6.0/#sec-tonumber'
+	},
+	ToObject: {
+		url: 'https://262.ecma-international.org/6.0/#sec-toobject'
+	},
+	ToPrimitive: {
+		url: 'https://262.ecma-international.org/6.0/#sec-toprimitive'
+	},
+	ToPropertyDescriptor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-topropertydescriptor'
+	},
+	ToPropertyKey: {
+		url: 'https://262.ecma-international.org/6.0/#sec-topropertykey'
+	},
+	ToString: {
+		url: 'https://262.ecma-international.org/6.0/#sec-tostring'
+	},
+	ToUint16: {
+		url: 'https://262.ecma-international.org/6.0/#sec-touint16'
+	},
+	ToUint32: {
+		url: 'https://262.ecma-international.org/6.0/#sec-touint32'
+	},
+	ToUint8: {
+		url: 'https://262.ecma-international.org/6.0/#sec-touint8'
+	},
+	ToUint8Clamp: {
+		url: 'https://262.ecma-international.org/6.0/#sec-touint8clamp'
+	},
+	TriggerPromiseReactions: {
+		url: 'https://262.ecma-international.org/6.0/#sec-triggerpromisereactions'
+	},
+	Type: {
+		url: 'https://262.ecma-international.org/6.0/#sec-ecmascript-data-types-and-values'
+	},
+	TypedArrayFrom: {
+		url: 'https://262.ecma-international.org/6.0/#sec-typedarrayfrom'
+	},
+	UpdateEmpty: {
+		url: 'https://262.ecma-international.org/6.0/#sec-updateempty'
+	},
+	UTC: {
+		url: 'https://262.ecma-international.org/6.0/#sec-utc-t'
+	},
+	ValidateAndApplyPropertyDescriptor: {
+		url: 'https://262.ecma-international.org/6.0/#sec-validateandapplypropertydescriptor'
+	},
+	ValidateTypedArray: {
+		url: 'https://262.ecma-international.org/6.0/#sec-validatetypedarray'
+	},
+	WeekDay: {
+		url: 'https://262.ecma-international.org/6.0/#sec-week-day'
+	},
+	YearFromTime: {
+		url: 'https://262.ecma-international.org/6.0/#sec-year-number'
+	}
+};
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        'use strict';
+
+module.exports = {
+	IsPropertyDescriptor: 'https://262.ecma-international.org/6.0/#sec-property-descriptor-specification-type', // not actually an abstract op
+
+	abs: {
+		url: 'https://262.ecma-international.org/7.0/#sec-algorithm-conventions'
+	},
+	'Abstract Equality Comparison': {
+		url: 'https://262.ecma-international.org/7.0/#sec-abstract-equality-comparison'
+	},
+	'Abstract Relational Comparison': {
+		url: 'https://262.ecma-international.org/7.0/#sec-abstract-relational-comparison'
+	},
+	AddRestrictedFunctionProperties: {
+		url: 'https://262.ecma-international.org/7.0/#sec-addrestrictedfunctionproperties'
+	},
+	AdvanceStringIndex: {
+		url: 'https://262.ecma-international.org/7.0/#sec-advancestringindex'
+	},
+	AllocateArrayBuffer: {
+		url: 'https://262.ecma-international.org/7.0/#sec-allocatearraybuffer'
+	},
+	AllocateTypedArray: {
+		url: 'https://262.ecma-international.org/7.0/#sec-allocatetypedarray'
+	},
+	AllocateTypedArrayBuffer: {
+		url: 'https://262.ecma-international.org/7.0/#sec-allocatetypedarraybuffer'
+	},
+	ArrayCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-arraycreate'
+	},
+	ArraySetLength: {
+		url: 'https://262.ecma-international.org/7.0/#sec-arraysetlength'
+	},
+	ArraySpeciesCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-arrayspeciescreate'
+	},
+	BlockDeclarationInstantiation: {
+		url: 'https://262.ecma-international.org/7.0/#sec-blockdeclarationinstantiation'
+	},
+	BoundFunctionCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-boundfunctioncreate'
+	},
+	Call: {
+		url: 'https://262.ecma-international.org/7.0/#sec-call'
+	},
+	Canonicalize: {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-canonicalize-ch'
+	},
+	CanonicalNumericIndexString: {
+		url: 'https://262.ecma-international.org/7.0/#sec-canonicalnumericindexstring'
+	},
+	CharacterRange: {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-characterrange-abstract-operation'
+	},
+	CharacterRangeOrUnion: {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-characterrangeorunion-abstract-operation'
+	},
+	CharacterSetMatcher: {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-charactersetmatcher-abstract-operation'
+	},
+	CloneArrayBuffer: {
+		url: 'https://262.ecma-international.org/7.0/#sec-clonearraybuffer'
+	},
+	CompletePropertyDescriptor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-completepropertydescriptor'
+	},
+	Completion: {
+		url: 'https://262.ecma-international.org/7.0/#sec-completion-record-specification-type'
+	},
+	CompletionRecord: {
+		url: 'https://262.ecma-international.org/7.0/#sec-completion-record-specification-type'
+	},
+	Construct: {
+		url: 'https://262.ecma-international.org/7.0/#sec-construct'
+	},
+	CopyDataBlockBytes: {
+		url: 'https://262.ecma-international.org/7.0/#sec-copydatablockbytes'
+	},
+	CreateArrayFromList: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createarrayfromlist'
+	},
+	CreateArrayIterator: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createarrayiterator'
+	},
+	CreateBuiltinFunction: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createbuiltinfunction'
+	},
+	CreateByteDataBlock: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createbytedatablock'
+	},
+	CreateDataProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createdataproperty'
+	},
+	CreateDataPropertyOrThrow: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createdatapropertyorthrow'
+	},
+	CreateDynamicFunction: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createdynamicfunction'
+	},
+	CreateHTML: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createhtml'
+	},
+	CreateIntrinsics: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createintrinsics'
+	},
+	CreateIterResultObject: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createiterresultobject'
+	},
+	CreateListFromArrayLike: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createlistfromarraylike'
+	},
+	CreateListIterator: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createlistiterator'
+	},
+	CreateMapIterator: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createmapiterator'
+	},
+	CreateMappedArgumentsObject: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createmappedargumentsobject'
+	},
+	CreateMethodProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createmethodproperty'
+	},
+	CreatePerIterationEnvironment: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createperiterationenvironment'
+	},
+	CreateRealm: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createrealm'
+	},
+	CreateResolvingFunctions: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createresolvingfunctions'
+	},
+	CreateSetIterator: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createsetiterator'
+	},
+	CreateStringIterator: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createstringiterator'
+	},
+	CreateUnmappedArgumentsObject: {
+		url: 'https://262.ecma-international.org/7.0/#sec-createunmappedargumentsobject'
+	},
+	DateFromTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-date-number'
+	},
+	Day: {
+		url: 'https://262.ecma-international.org/7.0/#sec-day-number-and-time-within-day'
+	},
+	DayFromYear: {
+		url: 'https://262.ecma-international.org/7.0/#sec-year-number'
+	},
+	DaylightSavingTA: {
+		url: 'https://262.ecma-international.org/7.0/#sec-daylight-saving-time-adjustment'
+	},
+	DaysInYear: {
+		url: 'https://262.ecma-international.org/7.0/#sec-year-number'
+	},
+	DayWithinYear: {
+		url: 'https://262.ecma-international.org/7.0/#sec-month-number'
+	},
+	Decode: {
+		url: 'https://262.ecma-international.org/7.0/#sec-decode'
+	},
+	DefinePropertyOrThrow: {
+		url: 'https://262.ecma-international.org/7.0/#sec-definepropertyorthrow'
+	},
+	DeletePropertyOrThrow: {
+		url: 'https://262.ecma-international.org/7.0/#sec-deletepropertyorthrow'
+	},
+	DetachArrayBuffer: {
+		url: 'https://262.ecma-international.org/7.0/#sec-detacharraybuffer'
+	},
+	Encode: {
+		url: 'https://262.ecma-international.org/7.0/#sec-encode'
+	},
+	EnqueueJob: {
+		url: 'https://262.ecma-international.org/7.0/#sec-enqueuejob'
+	},
+	EnumerableOwnNames: {
+		url: 'https://262.ecma-international.org/7.0/#sec-enumerableownnames'
+	},
+	EnumerateObjectProperties: {
+		url: 'https://262.ecma-international.org/7.0/#sec-enumerate-object-properties'
+	},
+	EscapeRegExpPattern: {
+		url: 'https://262.ecma-international.org/7.0/#sec-escaperegexppattern'
+	},
+	EvalDeclarationInstantiation: {
+		url: 'https://262.ecma-international.org/7.0/#sec-evaldeclarationinstantiation'
+	},
+	EvaluateCall: {
+		url: 'https://262.ecma-international.org/7.0/#sec-evaluatecall'
+	},
+	EvaluateDirectCall: {
+		url: 'https://262.ecma-international.org/7.0/#sec-evaluatedirectcall'
+	},
+	EvaluateNew: {
+		url: 'https://262.ecma-international.org/7.0/#sec-evaluatenew'
+	},
+	floor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-algorithm-conventions'
+	},
+	ForBodyEvaluation: {
+		url: 'https://262.ecma-international.org/7.0/#sec-forbodyevaluation'
+	},
+	'ForIn/OfBodyEvaluation': {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-forin-div-ofbodyevaluation-lhs-stmt-iterator-lhskind-labelset'
+	},
+	'ForIn/OfHeadEvaluation': {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-forin-div-ofheadevaluation-tdznames-expr-iterationkind'
+	},
+	FromPropertyDescriptor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-frompropertydescriptor'
+	},
+	FulfillPromise: {
+		url: 'https://262.ecma-international.org/7.0/#sec-fulfillpromise'
+	},
+	FunctionAllocate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-functionallocate'
+	},
+	FunctionCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-functioncreate'
+	},
+	FunctionDeclarationInstantiation: {
+		url: 'https://262.ecma-international.org/7.0/#sec-functiondeclarationinstantiation'
+	},
+	FunctionInitialize: {
+		url: 'https://262.ecma-international.org/7.0/#sec-functioninitialize'
+	},
+	GeneratorFunctionCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-generatorfunctioncreate'
+	},
+	GeneratorResume: {
+		url: 'https://262.ecma-international.org/7.0/#sec-generatorresume'
+	},
+	GeneratorResumeAbrupt: {
+		url: 'https://262.ecma-international.org/7.0/#sec-generatorresumeabrupt'
+	},
+	GeneratorStart: {
+		url: 'https://262.ecma-international.org/7.0/#sec-generatorstart'
+	},
+	GeneratorValidate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-generatorvalidate'
+	},
+	GeneratorYield: {
+		url: 'https://262.ecma-international.org/7.0/#sec-generatoryield'
+	},
+	Get: {
+		url: 'https://262.ecma-international.org/7.0/#sec-get-o-p'
+	},
+	GetActiveScriptOrModule: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getactivescriptormodule'
+	},
+	GetFunctionRealm: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getfunctionrealm'
+	},
+	GetGlobalObject: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getglobalobject'
+	},
+	GetIdentifierReference: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getidentifierreference'
+	},
+	GetIterator: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getiterator'
+	},
+	GetMethod: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getmethod'
+	},
+	GetModuleNamespace: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getmodulenamespace'
+	},
+	GetNewTarget: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getnewtarget'
+	},
+	GetOwnPropertyKeys: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getownpropertykeys'
+	},
+	GetPrototypeFromConstructor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getprototypefromconstructor'
+	},
+	GetSubstitution: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getsubstitution'
+	},
+	GetSuperConstructor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getsuperconstructor'
+	},
+	GetTemplateObject: {
+		url: 'https://262.ecma-international.org/7.0/#sec-gettemplateobject'
+	},
+	GetThisEnvironment: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getthisenvironment'
+	},
+	GetThisValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getthisvalue'
+	},
+	GetV: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getv'
+	},
+	GetValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getvalue'
+	},
+	GetValueFromBuffer: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getvaluefrombuffer'
+	},
+	GetViewValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-getviewvalue'
+	},
+	GlobalDeclarationInstantiation: {
+		url: 'https://262.ecma-international.org/7.0/#sec-globaldeclarationinstantiation'
+	},
+	HasOwnProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-hasownproperty'
+	},
+	HasProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-hasproperty'
+	},
+	HourFromTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-hours-minutes-second-and-milliseconds'
+	},
+	IfAbruptRejectPromise: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ifabruptrejectpromise'
+	},
+	ImportedLocalNames: {
+		url: 'https://262.ecma-international.org/7.0/#sec-importedlocalnames'
+	},
+	InitializeBoundName: {
+		url: 'https://262.ecma-international.org/7.0/#sec-initializeboundname'
+	},
+	InitializeHostDefinedRealm: {
+		url: 'https://262.ecma-international.org/7.0/#sec-initializehostdefinedrealm'
+	},
+	InitializeReferencedBinding: {
+		url: 'https://262.ecma-international.org/7.0/#sec-initializereferencedbinding'
+	},
+	InLeapYear: {
+		url: 'https://262.ecma-international.org/7.0/#sec-year-number'
+	},
+	InstanceofOperator: {
+		url: 'https://262.ecma-international.org/7.0/#sec-instanceofoperator'
+	},
+	IntegerIndexedElementGet: {
+		url: 'https://262.ecma-international.org/7.0/#sec-integerindexedelementget'
+	},
+	IntegerIndexedElementSet: {
+		url: 'https://262.ecma-international.org/7.0/#sec-integerindexedelementset'
+	},
+	IntegerIndexedObjectCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-integerindexedobjectcreate'
+	},
+	InternalizeJSONProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-internalizejsonproperty'
+	},
+	Invoke: {
+		url: 'https://262.ecma-international.org/7.0/#sec-invoke'
+	},
+	IsAccessorDescriptor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isaccessordescriptor'
+	},
+	IsAnonymousFunctionDefinition: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isanonymousfunctiondefinition'
+	},
+	IsArray: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isarray'
+	},
+	IsCallable: {
+		url: 'https://262.ecma-international.org/7.0/#sec-iscallable'
+	},
+	IsCompatiblePropertyDescriptor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-iscompatiblepropertydescriptor'
+	},
+	IsConcatSpreadable: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isconcatspreadable'
+	},
+	IsConstructor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isconstructor'
+	},
+	IsDataDescriptor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isdatadescriptor'
+	},
+	IsDetachedBuffer: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isdetachedbuffer'
+	},
+	IsExtensible: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isextensible-o'
+	},
+	IsGenericDescriptor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isgenericdescriptor'
+	},
+	IsInTailPosition: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isintailposition'
+	},
+	IsInteger: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isinteger'
+	},
+	IsLabelledFunction: {
+		url: 'https://262.ecma-international.org/7.0/#sec-islabelledfunction'
+	},
+	IsPromise: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ispromise'
+	},
+	IsPropertyKey: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ispropertykey'
+	},
+	IsRegExp: {
+		url: 'https://262.ecma-international.org/7.0/#sec-isregexp'
+	},
+	IsWordChar: {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-iswordchar-abstract-operation'
+	},
+	IterableToArrayLike: {
+		url: 'https://262.ecma-international.org/7.0/#sec-iterabletoarraylike'
+	},
+	IteratorClose: {
+		url: 'https://262.ecma-international.org/7.0/#sec-iteratorclose'
+	},
+	IteratorComplete: {
+		url: 'https://262.ecma-international.org/7.0/#sec-iteratorcomplete'
+	},
+	IteratorNext: {
+		url: 'https://262.ecma-international.org/7.0/#sec-iteratornext'
+	},
+	IteratorStep: {
+		url: 'https://262.ecma-international.org/7.0/#sec-iteratorstep'
+	},
+	IteratorValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-iteratorvalue'
+	},
+	LocalTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-localtime'
+	},
+	LoopContinues: {
+		url: 'https://262.ecma-international.org/7.0/#sec-loopcontinues'
+	},
+	MakeArgGetter: {
+		url: 'https://262.ecma-international.org/7.0/#sec-makearggetter'
+	},
+	MakeArgSetter: {
+		url: 'https://262.ecma-international.org/7.0/#sec-makeargsetter'
+	},
+	MakeClassConstructor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-makeclassconstructor'
+	},
+	MakeConstructor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-makeconstructor'
+	},
+	MakeDate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-makedate'
+	},
+	MakeDay: {
+		url: 'https://262.ecma-international.org/7.0/#sec-makeday'
+	},
+	MakeMethod: {
+		url: 'https://262.ecma-international.org/7.0/#sec-makemethod'
+	},
+	MakeSuperPropertyReference: {
+		url: 'https://262.ecma-international.org/7.0/#sec-makesuperpropertyreference'
+	},
+	MakeTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-maketime'
+	},
+	max: {
+		url: 'https://262.ecma-international.org/7.0/#sec-algorithm-conventions'
+	},
+	min: {
+		url: 'https://262.ecma-international.org/7.0/#sec-algorithm-conventions'
+	},
+	MinFromTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-hours-minutes-second-and-milliseconds'
+	},
+	ModuleNamespaceCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-modulenamespacecreate'
+	},
+	modulo: {
+		url: 'https://262.ecma-international.org/7.0/#sec-algorithm-conventions'
+	},
+	MonthFromTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-month-number'
+	},
+	msFromTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-hours-minutes-second-and-milliseconds'
+	},
+	NewDeclarativeEnvironment: {
+		url: 'https://262.ecma-international.org/7.0/#sec-newdeclarativeenvironment'
+	},
+	NewFunctionEnvironment: {
+		url: 'https://262.ecma-international.org/7.0/#sec-newfunctionenvironment'
+	},
+	NewGlobalEnvironment: {
+		url: 'https://262.ecma-international.org/7.0/#sec-newglobalenvironment'
+	},
+	NewModuleEnvironment: {
+		url: 'https://262.ecma-international.org/7.0/#sec-newmoduleenvironment'
+	},
+	NewObjectEnvironment: {
+		url: 'https://262.ecma-international.org/7.0/#sec-newobjectenvironment'
+	},
+	NewPromiseCapability: {
+		url: 'https://262.ecma-international.org/7.0/#sec-newpromisecapability'
+	},
+	NextJob: {
+		url: 'https://262.ecma-international.org/7.0/#sec-nextjob-result'
+	},
+	NormalCompletion: {
+		url: 'https://262.ecma-international.org/7.0/#sec-normalcompletion'
+	},
+	ObjectCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-objectcreate'
+	},
+	ObjectDefineProperties: {
+		url: 'https://262.ecma-international.org/7.0/#sec-objectdefineproperties'
+	},
+	OrdinaryCallBindThis: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarycallbindthis'
+	},
+	OrdinaryCallEvaluateBody: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarycallevaluatebody'
+	},
+	OrdinaryCreateFromConstructor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarycreatefromconstructor'
+	},
+	OrdinaryDefineOwnProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarydefineownproperty'
+	},
+	OrdinaryDelete: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarydelete'
+	},
+	OrdinaryGet: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinaryget'
+	},
+	OrdinaryGetOwnProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarygetownproperty'
+	},
+	OrdinaryGetPrototypeOf: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarygetprototypeof'
+	},
+	OrdinaryHasInstance: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinaryhasinstance'
+	},
+	OrdinaryHasProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinaryhasproperty'
+	},
+	OrdinaryIsExtensible: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinaryisextensible'
+	},
+	OrdinaryOwnPropertyKeys: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinaryownpropertykeys'
+	},
+	OrdinaryPreventExtensions: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarypreventextensions'
+	},
+	OrdinarySet: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinaryset'
+	},
+	OrdinarySetPrototypeOf: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ordinarysetprototypeof'
+	},
+	ParseModule: {
+		url: 'https://262.ecma-international.org/7.0/#sec-parsemodule'
+	},
+	ParseScript: {
+		url: 'https://262.ecma-international.org/7.0/#sec-parse-script'
+	},
+	PerformEval: {
+		url: 'https://262.ecma-international.org/7.0/#sec-performeval'
+	},
+	PerformPromiseAll: {
+		url: 'https://262.ecma-international.org/7.0/#sec-performpromiseall'
+	},
+	PerformPromiseRace: {
+		url: 'https://262.ecma-international.org/7.0/#sec-performpromiserace'
+	},
+	PerformPromiseThen: {
+		url: 'https://262.ecma-international.org/7.0/#sec-performpromisethen'
+	},
+	PrepareForOrdinaryCall: {
+		url: 'https://262.ecma-international.org/7.0/#sec-prepareforordinarycall'
+	},
+	PrepareForTailCall: {
+		url: 'https://262.ecma-international.org/7.0/#sec-preparefortailcall'
+	},
+	PromiseReactionJob: {
+		url: 'https://262.ecma-international.org/7.0/#sec-promisereactionjob'
+	},
+	PromiseResolveThenableJob: {
+		url: 'https://262.ecma-international.org/7.0/#sec-promiseresolvethenablejob'
+	},
+	ProxyCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-proxycreate'
+	},
+	PutValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-putvalue'
+	},
+	QuoteJSONString: {
+		url: 'https://262.ecma-international.org/7.0/#sec-quotejsonstring'
+	},
+	RegExpAlloc: {
+		url: 'https://262.ecma-international.org/7.0/#sec-regexpalloc'
+	},
+	RegExpBuiltinExec: {
+		url: 'https://262.ecma-international.org/7.0/#sec-regexpbuiltinexec'
+	},
+	RegExpCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-regexpcreate'
+	},
+	RegExpExec: {
+		url: 'https://262.ecma-international.org/7.0/#sec-regexpexec'
+	},
+	RegExpInitialize: {
+		url: 'https://262.ecma-international.org/7.0/#sec-regexpinitialize'
+	},
+	RejectPromise: {
+		url: 'https://262.ecma-international.org/7.0/#sec-rejectpromise'
+	},
+	RepeatMatcher: {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-repeatmatcher-abstract-operation'
+	},
+	RequireObjectCoercible: {
+		url: 'https://262.ecma-international.org/7.0/#sec-requireobjectcoercible'
+	},
+	ResolveBinding: {
+		url: 'https://262.ecma-international.org/7.0/#sec-resolvebinding'
+	},
+	ResolveThisBinding: {
+		url: 'https://262.ecma-international.org/7.0/#sec-resolvethisbinding'
+	},
+	ReturnIfAbrupt: {
+		url: 'https://262.ecma-international.org/7.0/#sec-returnifabrupt'
+	},
+	SameValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-samevalue'
+	},
+	SameValueNonNumber: {
+		url: 'https://262.ecma-international.org/7.0/#sec-samevaluenonnumber'
+	},
+	SameValueZero: {
+		url: 'https://262.ecma-international.org/7.0/#sec-samevaluezero'
+	},
+	ScriptEvaluation: {
+		url: 'https://262.ecma-international.org/7.0/#sec-runtime-semantics-scriptevaluation'
+	},
+	ScriptEvaluationJob: {
+		url: 'https://262.ecma-international.org/7.0/#sec-scriptevaluationjob'
+	},
+	SecFromTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-hours-minutes-second-and-milliseconds'
+	},
+	SerializeJSONArray: {
+		url: 'https://262.ecma-international.org/7.0/#sec-serializejsonarray'
+	},
+	SerializeJSONObject: {
+		url: 'https://262.ecma-international.org/7.0/#sec-serializejsonobject'
+	},
+	SerializeJSONProperty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-serializejsonproperty'
+	},
+	Set: {
+		url: 'https://262.ecma-international.org/7.0/#sec-set-o-p-v-throw'
+	},
+	SetDefaultGlobalBindings: {
+		url: 'https://262.ecma-international.org/7.0/#sec-setdefaultglobalbindings'
+	},
+	SetFunctionName: {
+		url: 'https://262.ecma-international.org/7.0/#sec-setfunctionname'
+	},
+	SetIntegrityLevel: {
+		url: 'https://262.ecma-international.org/7.0/#sec-setintegritylevel'
+	},
+	SetRealmGlobalObject: {
+		url: 'https://262.ecma-international.org/7.0/#sec-setrealmglobalobject'
+	},
+	SetValueInBuffer: {
+		url: 'https://262.ecma-international.org/7.0/#sec-setvalueinbuffer'
+	},
+	SetViewValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-setviewvalue'
+	},
+	SortCompare: {
+		url: 'https://262.ecma-international.org/7.0/#sec-sortcompare'
+	},
+	SpeciesConstructor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-speciesconstructor'
+	},
+	SplitMatch: {
+		url: 'https://262.ecma-international.org/7.0/#sec-splitmatch'
+	},
+	'Strict Equality Comparison': {
+		url: 'https://262.ecma-international.org/7.0/#sec-strict-equality-comparison'
+	},
+	StringCreate: {
+		url: 'https://262.ecma-international.org/7.0/#sec-stringcreate'
+	},
+	SymbolDescriptiveString: {
+		url: 'https://262.ecma-international.org/7.0/#sec-symboldescriptivestring'
+	},
+	TestIntegrityLevel: {
+		url: 'https://262.ecma-international.org/7.0/#sec-testintegritylevel'
+	},
+	thisBooleanValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-thisbooleanvalue'
+	},
+	thisNumberValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-properties-of-the-number-prototype-object'
+	},
+	thisStringValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-properties-of-the-string-prototype-object'
+	},
+	thisTimeValue: {
+		url: 'https://262.ecma-international.org/7.0/#sec-properties-of-the-date-prototype-object'
+	},
+	TimeClip: {
+		url: 'https://262.ecma-international.org/7.0/#sec-timeclip'
+	},
+	TimeFromYear: {
+		url: 'https://262.ecma-international.org/7.0/#sec-year-number'
+	},
+	TimeWithinDay: {
+		url: 'https://262.ecma-international.org/7.0/#sec-day-number-and-time-within-day'
+	},
+	ToBoolean: {
+		url: 'https://262.ecma-international.org/7.0/#sec-toboolean'
+	},
+	ToDateString: {
+		url: 'https://262.ecma-international.org/7.0/#sec-todatestring'
+	},
+	ToInt16: {
+		url: 'https://262.ecma-international.org/7.0/#sec-toint16'
+	},
+	ToInt32: {
+		url: 'https://262.ecma-international.org/7.0/#sec-toint32'
+	},
+	ToInt8: {
+		url: 'https://262.ecma-international.org/7.0/#sec-toint8'
+	},
+	ToInteger: {
+		url: 'https://262.ecma-international.org/7.0/#sec-tointeger'
+	},
+	ToLength: {
+		url: 'https://262.ecma-international.org/7.0/#sec-tolength'
+	},
+	ToNumber: {
+		url: 'https://262.ecma-international.org/7.0/#sec-tonumber'
+	},
+	ToObject: {
+		url: 'https://262.ecma-international.org/7.0/#sec-toobject'
+	},
+	TopLevelModuleEvaluationJob: {
+		url: 'https://262.ecma-international.org/7.0/#sec-toplevelmoduleevaluationjob'
+	},
+	ToPrimitive: {
+		url: 'https://262.ecma-international.org/7.0/#sec-toprimitive'
+	},
+	ToPropertyDescriptor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-topropertydescriptor'
+	},
+	ToPropertyKey: {
+		url: 'https://262.ecma-international.org/7.0/#sec-topropertykey'
+	},
+	ToString: {
+		url: 'https://262.ecma-international.org/7.0/#sec-tostring'
+	},
+	'ToString Applied to the Number Type': {
+		url: 'https://262.ecma-international.org/7.0/#sec-tostring-applied-to-the-number-type'
+	},
+	ToUint16: {
+		url: 'https://262.ecma-international.org/7.0/#sec-touint16'
+	},
+	ToUint32: {
+		url: 'https://262.ecma-international.org/7.0/#sec-touint32'
+	},
+	ToUint8: {
+		url: 'https://262.ecma-international.org/7.0/#sec-touint8'
+	},
+	ToUint8Clamp: {
+		url: 'https://262.ecma-international.org/7.0/#sec-touint8clamp'
+	},
+	TriggerPromiseReactions: {
+		url: 'https://262.ecma-international.org/7.0/#sec-triggerpromisereactions'
+	},
+	Type: {
+		url: 'https://262.ecma-international.org/7.0/#sec-ecmascript-data-types-and-values'
+	},
+	TypedArrayCreate: {
+		url: 'https://262.ecma-international.org/7.0/#typedarray-create'
+	},
+	TypedArraySpeciesCreate: {
+		url: 'https://262.ecma-international.org/7.0/#typedarray-species-create'
+	},
+	UpdateEmpty: {
+		url: 'https://262.ecma-international.org/7.0/#sec-updateempty'
+	},
+	UTC: {
+		url: 'https://262.ecma-international.org/7.0/#sec-utc-t'
+	},
+	UTF16Decode: {
+		url: 'https://262.ecma-international.org/7.0/#sec-utf16decode'
+	},
+	UTF16Encoding: {
+		url: 'https://262.ecma-international.org/7.0/#sec-utf16encoding'
+	},
+	ValidateAndApplyPropertyDescriptor: {
+		url: 'https://262.ecma-international.org/7.0/#sec-validateandapplypropertydescriptor'
+	},
+	ValidateTypedArray: {
+		url: 'https://262.ecma-international.org/7.0/#sec-validatetypedarray'
+	},
+	WeekDay: {
+		url: 'https://262.ecma-international.org/7.0/#sec-week-day'
+	},
+	YearFromTime: {
+		url: 'https://262.ecma-international.org/7.0/#sec-year-number'
+	}
+};
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                'use strict';
+
+module.exports = {
+	IsPropertyDescriptor: 'https://262.ecma-international.org/6.0/#sec-property-descriptor-specification-type', // not actually an abstract op
+
+	abs: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-abs'
+	},
+	'Abstract Equality Comparison': {
+		url: 'https://262.ecma-international.org/8.0/#sec-abstract-equality-comparison'
+	},
+	'Abstract Relational Comparison': {
+		url: 'https://262.ecma-international.org/8.0/#sec-abstract-relational-comparison'
+	},
+	AddRestrictedFunctionProperties: {
+		url: 'https://262.ecma-international.org/8.0/#sec-addrestrictedfunctionproperties'
+	},
+	AddWaiter: {
+		url: 'https://262.ecma-international.org/8.0/#sec-addwaiter'
+	},
+	AdvanceStringIndex: {
+		url: 'https://262.ecma-international.org/8.0/#sec-advancestringindex'
+	},
+	'agent-order': {
+		url: 'https://262.ecma-international.org/8.0/#sec-agent-order'
+	},
+	AgentCanSuspend: {
+		url: 'https://262.ecma-international.org/8.0/#sec-agentcansuspend'
+	},
+	AgentSignifier: {
+		url: 'https://262.ecma-international.org/8.0/#sec-agentsignifier'
+	},
+	AllocateArrayBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-allocatearraybuffer'
+	},
+	AllocateSharedArrayBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-allocatesharedarraybuffer'
+	},
+	AllocateTypedArray: {
+		url: 'https://262.ecma-international.org/8.0/#sec-allocatetypedarray'
+	},
+	AllocateTypedArrayBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-allocatetypedarraybuffer'
+	},
+	ArrayCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-arraycreate'
+	},
+	ArraySetLength: {
+		url: 'https://262.ecma-international.org/8.0/#sec-arraysetlength'
+	},
+	ArraySpeciesCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-arrayspeciescreate'
+	},
+	AsyncFunctionAwait: {
+		url: 'https://262.ecma-international.org/8.0/#sec-async-functions-abstract-operations-async-function-await'
+	},
+	AsyncFunctionCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-async-functions-abstract-operations-async-function-create'
+	},
+	AsyncFunctionStart: {
+		url: 'https://262.ecma-international.org/8.0/#sec-async-functions-abstract-operations-async-function-start'
+	},
+	AtomicLoad: {
+		url: 'https://262.ecma-international.org/8.0/#sec-atomicload'
+	},
+	AtomicReadModifyWrite: {
+		url: 'https://262.ecma-international.org/8.0/#sec-atomicreadmodifywrite'
+	},
+	BlockDeclarationInstantiation: {
+		url: 'https://262.ecma-international.org/8.0/#sec-blockdeclarationinstantiation'
+	},
+	BoundFunctionCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-boundfunctioncreate'
+	},
+	Call: {
+		url: 'https://262.ecma-international.org/8.0/#sec-call'
+	},
+	Canonicalize: {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-canonicalize-ch'
+	},
+	CanonicalNumericIndexString: {
+		url: 'https://262.ecma-international.org/8.0/#sec-canonicalnumericindexstring'
+	},
+	CharacterRange: {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-characterrange-abstract-operation'
+	},
+	CharacterRangeOrUnion: {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-characterrangeorunion-abstract-operation'
+	},
+	CharacterSetMatcher: {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-charactersetmatcher-abstract-operation'
+	},
+	CloneArrayBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-clonearraybuffer'
+	},
+	CompletePropertyDescriptor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-completepropertydescriptor'
+	},
+	Completion: {
+		url: 'https://262.ecma-international.org/8.0/#sec-completion-record-specification-type'
+	},
+	CompletionRecord: {
+		url: 'https://262.ecma-international.org/8.0/#sec-completion-record-specification-type'
+	},
+	ComposeWriteEventBytes: {
+		url: 'https://262.ecma-international.org/8.0/#sec-composewriteeventbytes'
+	},
+	Construct: {
+		url: 'https://262.ecma-international.org/8.0/#sec-construct'
+	},
+	CopyDataBlockBytes: {
+		url: 'https://262.ecma-international.org/8.0/#sec-copydatablockbytes'
+	},
+	CreateArrayFromList: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createarrayfromlist'
+	},
+	CreateArrayIterator: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createarrayiterator'
+	},
+	CreateBuiltinFunction: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createbuiltinfunction'
+	},
+	CreateByteDataBlock: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createbytedatablock'
+	},
+	CreateDataProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createdataproperty'
+	},
+	CreateDataPropertyOrThrow: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createdatapropertyorthrow'
+	},
+	CreateDynamicFunction: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createdynamicfunction'
+	},
+	CreateHTML: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createhtml'
+	},
+	CreateIntrinsics: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createintrinsics'
+	},
+	CreateIterResultObject: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createiterresultobject'
+	},
+	CreateListFromArrayLike: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createlistfromarraylike'
+	},
+	CreateListIterator: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createlistiterator'
+	},
+	CreateMapIterator: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createmapiterator'
+	},
+	CreateMappedArgumentsObject: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createmappedargumentsobject'
+	},
+	CreateMethodProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createmethodproperty'
+	},
+	CreatePerIterationEnvironment: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createperiterationenvironment'
+	},
+	CreateRealm: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createrealm'
+	},
+	CreateResolvingFunctions: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createresolvingfunctions'
+	},
+	CreateSetIterator: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createsetiterator'
+	},
+	CreateSharedByteDataBlock: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createsharedbytedatablock'
+	},
+	CreateStringIterator: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createstringiterator'
+	},
+	CreateUnmappedArgumentsObject: {
+		url: 'https://262.ecma-international.org/8.0/#sec-createunmappedargumentsobject'
+	},
+	DateFromTime: {
+		url: 'https://262.ecma-international.org/8.0/#sec-date-number'
+	},
+	Day: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-Day'
+	},
+	DayFromYear: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-DaysFromYear'
+	},
+	DaylightSavingTA: {
+		url: 'https://262.ecma-international.org/8.0/#sec-daylight-saving-time-adjustment'
+	},
+	DaysInYear: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-DaysInYear'
+	},
+	DayWithinYear: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-DayWithinYear'
+	},
+	Decode: {
+		url: 'https://262.ecma-international.org/8.0/#sec-decode'
+	},
+	DefinePropertyOrThrow: {
+		url: 'https://262.ecma-international.org/8.0/#sec-definepropertyorthrow'
+	},
+	DeletePropertyOrThrow: {
+		url: 'https://262.ecma-international.org/8.0/#sec-deletepropertyorthrow'
+	},
+	DetachArrayBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-detacharraybuffer'
+	},
+	Encode: {
+		url: 'https://262.ecma-international.org/8.0/#sec-encode'
+	},
+	EnqueueJob: {
+		url: 'https://262.ecma-international.org/8.0/#sec-enqueuejob'
+	},
+	EnterCriticalSection: {
+		url: 'https://262.ecma-international.org/8.0/#sec-entercriticalsection'
+	},
+	EnumerableOwnProperties: {
+		url: 'https://262.ecma-international.org/8.0/#sec-enumerableownproperties'
+	},
+	EnumerateObjectProperties: {
+		url: 'https://262.ecma-international.org/8.0/#sec-enumerate-object-properties'
+	},
+	EscapeRegExpPattern: {
+		url: 'https://262.ecma-international.org/8.0/#sec-escaperegexppattern'
+	},
+	EvalDeclarationInstantiation: {
+		url: 'https://262.ecma-international.org/8.0/#sec-evaldeclarationinstantiation'
+	},
+	EvaluateCall: {
+		url: 'https://262.ecma-international.org/8.0/#sec-evaluatecall'
+	},
+	EvaluateDirectCall: {
+		url: 'https://262.ecma-international.org/8.0/#sec-evaluatedirectcall'
+	},
+	EvaluateNew: {
+		url: 'https://262.ecma-international.org/8.0/#sec-evaluatenew'
+	},
+	EventSet: {
+		url: 'https://262.ecma-international.org/8.0/#sec-event-set'
+	},
+	floor: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-floor'
+	},
+	ForBodyEvaluation: {
+		url: 'https://262.ecma-international.org/8.0/#sec-forbodyevaluation'
+	},
+	'ForIn/OfBodyEvaluation': {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-forin-div-ofbodyevaluation-lhs-stmt-iterator-lhskind-labelset'
+	},
+	'ForIn/OfHeadEvaluation': {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-forin-div-ofheadevaluation-tdznames-expr-iterationkind'
+	},
+	FromPropertyDescriptor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-frompropertydescriptor'
+	},
+	FulfillPromise: {
+		url: 'https://262.ecma-international.org/8.0/#sec-fulfillpromise'
+	},
+	FunctionAllocate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-functionallocate'
+	},
+	FunctionCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-functioncreate'
+	},
+	FunctionDeclarationInstantiation: {
+		url: 'https://262.ecma-international.org/8.0/#sec-functiondeclarationinstantiation'
+	},
+	FunctionInitialize: {
+		url: 'https://262.ecma-international.org/8.0/#sec-functioninitialize'
+	},
+	GeneratorFunctionCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-generatorfunctioncreate'
+	},
+	GeneratorResume: {
+		url: 'https://262.ecma-international.org/8.0/#sec-generatorresume'
+	},
+	GeneratorResumeAbrupt: {
+		url: 'https://262.ecma-international.org/8.0/#sec-generatorresumeabrupt'
+	},
+	GeneratorStart: {
+		url: 'https://262.ecma-international.org/8.0/#sec-generatorstart'
+	},
+	GeneratorValidate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-generatorvalidate'
+	},
+	GeneratorYield: {
+		url: 'https://262.ecma-international.org/8.0/#sec-generatoryield'
+	},
+	Get: {
+		url: 'https://262.ecma-international.org/8.0/#sec-get-o-p'
+	},
+	GetActiveScriptOrModule: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getactivescriptormodule'
+	},
+	GetBase: {
+		url: 'https://262.ecma-international.org/8.0/#ao-getbase'
+	},
+	GetFunctionRealm: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getfunctionrealm'
+	},
+	GetGlobalObject: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getglobalobject'
+	},
+	GetIdentifierReference: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getidentifierreference'
+	},
+	GetIterator: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getiterator'
+	},
+	GetMethod: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getmethod'
+	},
+	GetModifySetValueInBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getmodifysetvalueinbuffer'
+	},
+	GetModuleNamespace: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getmodulenamespace'
+	},
+	GetNewTarget: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getnewtarget'
+	},
+	GetOwnPropertyKeys: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getownpropertykeys'
+	},
+	GetPrototypeFromConstructor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getprototypefromconstructor'
+	},
+	GetReferencedName: {
+		url: 'https://262.ecma-international.org/8.0/#ao-getreferencedname'
+	},
+	GetSubstitution: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getsubstitution'
+	},
+	GetSuperConstructor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getsuperconstructor'
+	},
+	GetTemplateObject: {
+		url: 'https://262.ecma-international.org/8.0/#sec-gettemplateobject'
+	},
+	GetThisEnvironment: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getthisenvironment'
+	},
+	GetThisValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getthisvalue'
+	},
+	GetV: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getv'
+	},
+	GetValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getvalue'
+	},
+	GetValueFromBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getvaluefrombuffer'
+	},
+	GetViewValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getviewvalue'
+	},
+	GetWaiterList: {
+		url: 'https://262.ecma-international.org/8.0/#sec-getwaiterlist'
+	},
+	GlobalDeclarationInstantiation: {
+		url: 'https://262.ecma-international.org/8.0/#sec-globaldeclarationinstantiation'
+	},
+	'happens-before': {
+		url: 'https://262.ecma-international.org/8.0/#sec-happens-before'
+	},
+	HasOwnProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-hasownproperty'
+	},
+	HasPrimitiveBase: {
+		url: 'https://262.ecma-international.org/8.0/#ao-hasprimitivebase'
+	},
+	HasProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-hasproperty'
+	},
+	'host-synchronizes-with': {
+		url: 'https://262.ecma-international.org/8.0/#sec-host-synchronizes-with'
+	},
+	HostEventSet: {
+		url: 'https://262.ecma-international.org/8.0/#sec-hosteventset'
+	},
+	HourFromTime: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-HourFromTime'
+	},
+	IfAbruptRejectPromise: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ifabruptrejectpromise'
+	},
+	ImportedLocalNames: {
+		url: 'https://262.ecma-international.org/8.0/#sec-importedlocalnames'
+	},
+	InitializeBoundName: {
+		url: 'https://262.ecma-international.org/8.0/#sec-initializeboundname'
+	},
+	InitializeHostDefinedRealm: {
+		url: 'https://262.ecma-international.org/8.0/#sec-initializehostdefinedrealm'
+	},
+	InitializeReferencedBinding: {
+		url: 'https://262.ecma-international.org/8.0/#sec-initializereferencedbinding'
+	},
+	InLeapYear: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-InLeapYear'
+	},
+	InstanceofOperator: {
+		url: 'https://262.ecma-international.org/8.0/#sec-instanceofoperator'
+	},
+	IntegerIndexedElementGet: {
+		url: 'https://262.ecma-international.org/8.0/#sec-integerindexedelementget'
+	},
+	IntegerIndexedElementSet: {
+		url: 'https://262.ecma-international.org/8.0/#sec-integerindexedelementset'
+	},
+	IntegerIndexedObjectCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-integerindexedobjectcreate'
+	},
+	InternalizeJSONProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-internalizejsonproperty'
+	},
+	Invoke: {
+		url: 'https://262.ecma-international.org/8.0/#sec-invoke'
+	},
+	IsAccessorDescriptor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isaccessordescriptor'
+	},
+	IsAnonymousFunctionDefinition: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isanonymousfunctiondefinition'
+	},
+	IsArray: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isarray'
+	},
+	IsCallable: {
+		url: 'https://262.ecma-international.org/8.0/#sec-iscallable'
+	},
+	IsCompatiblePropertyDescriptor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-iscompatiblepropertydescriptor'
+	},
+	IsConcatSpreadable: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isconcatspreadable'
+	},
+	IsConstructor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isconstructor'
+	},
+	IsDataDescriptor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isdatadescriptor'
+	},
+	IsDetachedBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isdetachedbuffer'
+	},
+	IsExtensible: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isextensible-o'
+	},
+	IsGenericDescriptor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isgenericdescriptor'
+	},
+	IsInTailPosition: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isintailposition'
+	},
+	IsInteger: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isinteger'
+	},
+	IsLabelledFunction: {
+		url: 'https://262.ecma-international.org/8.0/#sec-islabelledfunction'
+	},
+	IsPromise: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ispromise'
+	},
+	IsPropertyKey: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ispropertykey'
+	},
+	IsPropertyReference: {
+		url: 'https://262.ecma-international.org/8.0/#ao-ispropertyreference'
+	},
+	IsRegExp: {
+		url: 'https://262.ecma-international.org/8.0/#sec-isregexp'
+	},
+	IsSharedArrayBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-issharedarraybuffer'
+	},
+	IsStrictReference: {
+		url: 'https://262.ecma-international.org/8.0/#ao-isstrictreference'
+	},
+	IsSuperReference: {
+		url: 'https://262.ecma-international.org/8.0/#ao-issuperreference'
+	},
+	IsUnresolvableReference: {
+		url: 'https://262.ecma-international.org/8.0/#ao-isunresolvablereference'
+	},
+	IsWordChar: {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-iswordchar-abstract-operation'
+	},
+	IterableToList: {
+		url: 'https://262.ecma-international.org/8.0/#sec-iterabletolist'
+	},
+	IteratorClose: {
+		url: 'https://262.ecma-international.org/8.0/#sec-iteratorclose'
+	},
+	IteratorComplete: {
+		url: 'https://262.ecma-international.org/8.0/#sec-iteratorcomplete'
+	},
+	IteratorNext: {
+		url: 'https://262.ecma-international.org/8.0/#sec-iteratornext'
+	},
+	IteratorStep: {
+		url: 'https://262.ecma-international.org/8.0/#sec-iteratorstep'
+	},
+	IteratorValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-iteratorvalue'
+	},
+	LeaveCriticalSection: {
+		url: 'https://262.ecma-international.org/8.0/#sec-leavecriticalsection'
+	},
+	LocalTime: {
+		url: 'https://262.ecma-international.org/8.0/#sec-localtime'
+	},
+	LoopContinues: {
+		url: 'https://262.ecma-international.org/8.0/#sec-loopcontinues'
+	},
+	MakeArgGetter: {
+		url: 'https://262.ecma-international.org/8.0/#sec-makearggetter'
+	},
+	MakeArgSetter: {
+		url: 'https://262.ecma-international.org/8.0/#sec-makeargsetter'
+	},
+	MakeClassConstructor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-makeclassconstructor'
+	},
+	MakeConstructor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-makeconstructor'
+	},
+	MakeDate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-makedate'
+	},
+	MakeDay: {
+		url: 'https://262.ecma-international.org/8.0/#sec-makeday'
+	},
+	MakeMethod: {
+		url: 'https://262.ecma-international.org/8.0/#sec-makemethod'
+	},
+	MakeSuperPropertyReference: {
+		url: 'https://262.ecma-international.org/8.0/#sec-makesuperpropertyreference'
+	},
+	MakeTime: {
+		url: 'https://262.ecma-international.org/8.0/#sec-maketime'
+	},
+	max: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-max'
+	},
+	'memory-order': {
+		url: 'https://262.ecma-international.org/8.0/#sec-memory-order'
+	},
+	min: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-min'
+	},
+	MinFromTime: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-MinFromTime'
+	},
+	ModuleNamespaceCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-modulenamespacecreate'
+	},
+	modulo: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-modulo'
+	},
+	MonthFromTime: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-MonthFromTime'
+	},
+	msFromTime: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-msFromTime'
+	},
+	NewDeclarativeEnvironment: {
+		url: 'https://262.ecma-international.org/8.0/#sec-newdeclarativeenvironment'
+	},
+	NewFunctionEnvironment: {
+		url: 'https://262.ecma-international.org/8.0/#sec-newfunctionenvironment'
+	},
+	NewGlobalEnvironment: {
+		url: 'https://262.ecma-international.org/8.0/#sec-newglobalenvironment'
+	},
+	NewModuleEnvironment: {
+		url: 'https://262.ecma-international.org/8.0/#sec-newmoduleenvironment'
+	},
+	NewObjectEnvironment: {
+		url: 'https://262.ecma-international.org/8.0/#sec-newobjectenvironment'
+	},
+	NewPromiseCapability: {
+		url: 'https://262.ecma-international.org/8.0/#sec-newpromisecapability'
+	},
+	NormalCompletion: {
+		url: 'https://262.ecma-international.org/8.0/#sec-normalcompletion'
+	},
+	NumberToRawBytes: {
+		url: 'https://262.ecma-international.org/8.0/#sec-numbertorawbytes'
+	},
+	ObjectCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-objectcreate'
+	},
+	ObjectDefineProperties: {
+		url: 'https://262.ecma-international.org/8.0/#sec-objectdefineproperties'
+	},
+	OrdinaryCallBindThis: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarycallbindthis'
+	},
+	OrdinaryCallEvaluateBody: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarycallevaluatebody'
+	},
+	OrdinaryCreateFromConstructor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarycreatefromconstructor'
+	},
+	OrdinaryDefineOwnProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarydefineownproperty'
+	},
+	OrdinaryDelete: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarydelete'
+	},
+	OrdinaryGet: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinaryget'
+	},
+	OrdinaryGetOwnProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarygetownproperty'
+	},
+	OrdinaryGetPrototypeOf: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarygetprototypeof'
+	},
+	OrdinaryHasInstance: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinaryhasinstance'
+	},
+	OrdinaryHasProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinaryhasproperty'
+	},
+	OrdinaryIsExtensible: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinaryisextensible'
+	},
+	OrdinaryOwnPropertyKeys: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinaryownpropertykeys'
+	},
+	OrdinaryPreventExtensions: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarypreventextensions'
+	},
+	OrdinarySet: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinaryset'
+	},
+	OrdinarySetPrototypeOf: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarysetprototypeof'
+	},
+	OrdinaryToPrimitive: {
+		url: 'https://262.ecma-international.org/8.0/#sec-ordinarytoprimitive'
+	},
+	ParseModule: {
+		url: 'https://262.ecma-international.org/8.0/#sec-parsemodule'
+	},
+	ParseScript: {
+		url: 'https://262.ecma-international.org/8.0/#sec-parse-script'
+	},
+	PerformEval: {
+		url: 'https://262.ecma-international.org/8.0/#sec-performeval'
+	},
+	PerformPromiseAll: {
+		url: 'https://262.ecma-international.org/8.0/#sec-performpromiseall'
+	},
+	PerformPromiseRace: {
+		url: 'https://262.ecma-international.org/8.0/#sec-performpromiserace'
+	},
+	PerformPromiseThen: {
+		url: 'https://262.ecma-international.org/8.0/#sec-performpromisethen'
+	},
+	PrepareForOrdinaryCall: {
+		url: 'https://262.ecma-international.org/8.0/#sec-prepareforordinarycall'
+	},
+	PrepareForTailCall: {
+		url: 'https://262.ecma-international.org/8.0/#sec-preparefortailcall'
+	},
+	PromiseReactionJob: {
+		url: 'https://262.ecma-international.org/8.0/#sec-promisereactionjob'
+	},
+	PromiseResolveThenableJob: {
+		url: 'https://262.ecma-international.org/8.0/#sec-promiseresolvethenablejob'
+	},
+	ProxyCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-proxycreate'
+	},
+	PutValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-putvalue'
+	},
+	QuoteJSONString: {
+		url: 'https://262.ecma-international.org/8.0/#sec-quotejsonstring'
+	},
+	RawBytesToNumber: {
+		url: 'https://262.ecma-international.org/8.0/#sec-rawbytestonumber'
+	},
+	'reads-bytes-from': {
+		url: 'https://262.ecma-international.org/8.0/#sec-reads-bytes-from'
+	},
+	'reads-from': {
+		url: 'https://262.ecma-international.org/8.0/#sec-reads-from'
+	},
+	RegExpAlloc: {
+		url: 'https://262.ecma-international.org/8.0/#sec-regexpalloc'
+	},
+	RegExpBuiltinExec: {
+		url: 'https://262.ecma-international.org/8.0/#sec-regexpbuiltinexec'
+	},
+	RegExpCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-regexpcreate'
+	},
+	RegExpExec: {
+		url: 'https://262.ecma-international.org/8.0/#sec-regexpexec'
+	},
+	RegExpInitialize: {
+		url: 'https://262.ecma-international.org/8.0/#sec-regexpinitialize'
+	},
+	RejectPromise: {
+		url: 'https://262.ecma-international.org/8.0/#sec-rejectpromise'
+	},
+	RemoveWaiter: {
+		url: 'https://262.ecma-international.org/8.0/#sec-removewaiter'
+	},
+	RemoveWaiters: {
+		url: 'https://262.ecma-international.org/8.0/#sec-removewaiters'
+	},
+	RepeatMatcher: {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-repeatmatcher-abstract-operation'
+	},
+	RequireObjectCoercible: {
+		url: 'https://262.ecma-international.org/8.0/#sec-requireobjectcoercible'
+	},
+	ResolveBinding: {
+		url: 'https://262.ecma-international.org/8.0/#sec-resolvebinding'
+	},
+	ResolveThisBinding: {
+		url: 'https://262.ecma-international.org/8.0/#sec-resolvethisbinding'
+	},
+	ReturnIfAbrupt: {
+		url: 'https://262.ecma-international.org/8.0/#sec-returnifabrupt'
+	},
+	RunJobs: {
+		url: 'https://262.ecma-international.org/8.0/#sec-runjobs'
+	},
+	SameValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-samevalue'
+	},
+	SameValueNonNumber: {
+		url: 'https://262.ecma-international.org/8.0/#sec-samevaluenonnumber'
+	},
+	SameValueZero: {
+		url: 'https://262.ecma-international.org/8.0/#sec-samevaluezero'
+	},
+	ScriptEvaluation: {
+		url: 'https://262.ecma-international.org/8.0/#sec-runtime-semantics-scriptevaluation'
+	},
+	ScriptEvaluationJob: {
+		url: 'https://262.ecma-international.org/8.0/#sec-scriptevaluationjob'
+	},
+	SecFromTime: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-SecFromTime'
+	},
+	SerializeJSONArray: {
+		url: 'https://262.ecma-international.org/8.0/#sec-serializejsonarray'
+	},
+	SerializeJSONObject: {
+		url: 'https://262.ecma-international.org/8.0/#sec-serializejsonobject'
+	},
+	SerializeJSONProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-serializejsonproperty'
+	},
+	Set: {
+		url: 'https://262.ecma-international.org/8.0/#sec-set-o-p-v-throw'
+	},
+	SetDefaultGlobalBindings: {
+		url: 'https://262.ecma-international.org/8.0/#sec-setdefaultglobalbindings'
+	},
+	SetFunctionName: {
+		url: 'https://262.ecma-international.org/8.0/#sec-setfunctionname'
+	},
+	SetImmutablePrototype: {
+		url: 'https://262.ecma-international.org/8.0/#sec-set-immutable-prototype'
+	},
+	SetIntegrityLevel: {
+		url: 'https://262.ecma-international.org/8.0/#sec-setintegritylevel'
+	},
+	SetRealmGlobalObject: {
+		url: 'https://262.ecma-international.org/8.0/#sec-setrealmglobalobject'
+	},
+	SetValueInBuffer: {
+		url: 'https://262.ecma-international.org/8.0/#sec-setvalueinbuffer'
+	},
+	SetViewValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-setviewvalue'
+	},
+	SharedDataBlockEventSet: {
+		url: 'https://262.ecma-international.org/8.0/#sec-sharedatablockeventset'
+	},
+	SortCompare: {
+		url: 'https://262.ecma-international.org/8.0/#sec-sortcompare'
+	},
+	SpeciesConstructor: {
+		url: 'https://262.ecma-international.org/8.0/#sec-speciesconstructor'
+	},
+	SplitMatch: {
+		url: 'https://262.ecma-international.org/8.0/#sec-splitmatch'
+	},
+	'Strict Equality Comparison': {
+		url: 'https://262.ecma-international.org/8.0/#sec-strict-equality-comparison'
+	},
+	StringCreate: {
+		url: 'https://262.ecma-international.org/8.0/#sec-stringcreate'
+	},
+	StringGetOwnProperty: {
+		url: 'https://262.ecma-international.org/8.0/#sec-stringgetownproperty'
+	},
+	Suspend: {
+		url: 'https://262.ecma-international.org/8.0/#sec-suspend'
+	},
+	SymbolDescriptiveString: {
+		url: 'https://262.ecma-international.org/8.0/#sec-symboldescriptivestring'
+	},
+	'synchronizes-with': {
+		url: 'https://262.ecma-international.org/8.0/#sec-synchronizes-with'
+	},
+	TestIntegrityLevel: {
+		url: 'https://262.ecma-international.org/8.0/#sec-testintegritylevel'
+	},
+	thisBooleanValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-thisbooleanvalue'
+	},
+	thisNumberValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-thisnumbervalue'
+	},
+	thisStringValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-thisstringvalue'
+	},
+	thisTimeValue: {
+		url: 'https://262.ecma-international.org/8.0/#sec-thistimevalue'
+	},
+	TimeClip: {
+		url: 'https://262.ecma-international.org/8.0/#sec-timeclip'
+	},
+	TimeFromYear: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-TimeFromYear'
+	},
+	TimeWithinDay: {
+		url: 'https://262.ecma-international.org/8.0/#eqn-TimeWithinDay'
+	},
+	ToBoolean: {
+		url: 'https://262.ecma-international.org/8.0/#sec-toboolean'
+	},
+	ToDateString: {
+		url: 'https://262.ecma-international.org/8.0/#sec-todatestring'
+	},
+	ToIndex: {
+		url: 'https://262.ecma-international.org/8.0/#sec-toindex'
+	},
+	ToInt16: {
+		url: 'https://262.ecma-international.org/8.0/#sec-toint16'
+	},
+	ToInt32: {
+		url: 'https://262.ecma-international.org/8.0/#sec-toint32'
+	},
+	ToInt8: {
+		url: 'https://262.ecma-international.org/8.0/#sec-toint8'
+	},
+	ToInteger: {
+		url: 'https://262.ecma-international.org/8.0/#sec-tointeger'
+	},
+	ToLength: {
+		url: 'https://262.ecma-international.org/8.0/#sec-tolength'
+	},
+	ToNumber: {
+		url: 'https://262.ecma-international.org/8.0/#sec-tonumber'
+	},
+	ToObject: {
+		url: 'https://262.ecma-international.org/8.0/#sec-toobject'
+	},
+	TopLevelModuleEvaluationJob: {
+		url: 'https://262.ecma-international.org/8.0/#sec-toplevelmoduleevaluationjob'
+	},
+	ToPrimitive: {
+		url: 'https:

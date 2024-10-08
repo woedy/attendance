@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <h1>Employee Details</h1>
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Employee Information</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Staff ID:</strong> {{ staff.staff_number }}</p>
+                    <p><strong>First Name:</strong> {{ staff.first_name }}</p>
+                    <p><strong>Last Name:</strong> {{ staff.last_name }}</p>
+                    <p><strong>Middle Name:</strong> {{ staff.middle_name }}</p>
+                    <p><strong>Sex:</strong> {{ staff.sex }}</p>
+                </div>
+				 <div class="col-md-6">
+					 <p><strong>Current Grade:</strong> {{ staff.current_grade }}</p>
+                    <p><strong>Senior/Junior:</strong> {{ staff.senior_junior }}</p>
+                    <p><strong>Directorate/Unit:</strong> {{ staff.Directorate }}</p>
+					 <p><strong>Staff/ National Service:</strong> {{ staff.staff_national }}</p>
+                    <p><strong>Phone Number:</strong> {{ staff.phone_number }}</p>
+
+            </div>
+           
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+
+  # Database Postgres
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=attendance_postgres
+      - POSTGRES_USER=attendance_postgres
+      - POSTGRES_PASSWORD=attendance_postgres
+    container_name: attendance_postgres_db
+    restart: unless-stopped
+
+  # Django Application
+  attendance_app:
+    build: .
+    volumes:
+      - .:/attendance_django
+      - ./static_cdn:/var/lib/static_cdn
+    ports:
+      - 80:80
+    image: attendance_app:django
+    container_name: attendance_django_app
+    command: python manage.py runserver 0.0.0.0:80
+    depends_on:
+      - db
+    restart: unless-stopped
+
+
+volumes:
+  static_cdn:
+
+#networks:
+#  default:
+#    external: true
+#    name: docker-nginx-proxy-manager

@@ -1,0 +1,81 @@
+<!-- attendance_chart.html -->
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Filter dropdown menu -->
+<label for="filterSelect">Filter:</label>
+<select id="filterSelect">
+    <option value="day">Day</option>
+    <option value="week">Week</option>
+    <option value="month">Month</option>
+</select>
+
+<!-- Group by dropdown menu -->
+<label for="groupBySelect">Group By:</label>
+<select id="groupBySelect">
+    <option value="date">Date</option>
+    <option value="senior_junior">Senior/Junior</option>
+</select>
+
+<!-- HTML canvas elements for the charts -->
+<canvas id="attendanceChart1" width="800" height="400"></canvas>
+<!-- <canvas id="attendanceChart2" width="800" height="400"></canvas> -->
+
+<script>
+    function fetchAttendanceData(filterType, groupBy) {
+        return fetch(`/attendance_chart/?filter=${filterType}&group_by=${groupBy}`)
+            .then(response => response.json())
+            .catch(error => console.error('Error fetching attendance data:', error));
+    }
+
+    function createLineChart(canvasId, labels, data, label) {
+        var ctx = document.getElementById(canvasId).getContext('2d');
+        return new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: label,
+                    data: data,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    function updateCharts() {
+        var filterType = document.getElementById('filterSelect').value;
+        var groupBy = document.getElementById('groupBySelect').value;
+
+        Promise.all([
+            fetchAttendanceData(filterType, 'date'),
+            fetchAttendanceData(filterType, 'senior_junior')
+        ]).then(([dateData, seniorJuniorData]) => {
+            if (window.myLineChart1) {
+                window.myLineChart1.destroy();
+            }
+            if (window.myLineChart2) {
+                window.myLineChart2.destroy();
+            }
+
+            window.myLineChart1 = createLineChart('attendanceChart1', dateData.labels, dateData.counts, 'Attendance Counts');
+            window.myLineChart2 = createLineChart('attendanceChart2', seniorJuniorData.labels, seniorJuniorData.counts, 'Attendance Counts (Senior/Junior)');
+        });
+    }
+
+    document.getElementById('filterSelect').addEventListener('change', updateCharts);
+    document.getElementById('groupBySelect').addEventListener('change', updateCharts);
+
+    updateCharts();
+</script>
+
+{% endblock %}

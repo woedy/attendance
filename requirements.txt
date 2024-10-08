@@ -1,0 +1,7 @@
+Django
+Pillow
+psycopg2-binary
+pyOpenSSL
+Werkzeug
+django-extensions
+django-sslserver
